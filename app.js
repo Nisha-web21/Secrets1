@@ -19,7 +19,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser:true});
+//connect to atlas database globally
+
+
+mongoose.connect("mongodb+srv://admin-nisha:test123@cluster0.ifazw.mongodb.net/userDb",{useNewUrlParser:true});
 //mongoose.connect("mongodb://localhost:27017/blogsDb",{useNewUrlParser:true});
 
 
